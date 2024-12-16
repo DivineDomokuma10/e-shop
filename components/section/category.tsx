@@ -86,7 +86,7 @@ const Category = () => {
             <Link
               href={link}
               key={`mobile-${i}`}
-              className="group w-fit h-fit p-2 rounded-[5px] text-gray-600 flex flex-col items-center space-y-3 shadow-md"
+              className="group w-fit h-fit p-2 rounded-[5px] text-gray-600 flex flex-col items-center space-y-3 shadow-md md:hidden"
             >
               {categoriesIcon[i]}
               <span className="text-xs">{text}</span>
