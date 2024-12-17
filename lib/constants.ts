@@ -17,7 +17,7 @@ export const SOCIAL_MEDIAS = [
   },
   {
     text: "LinkedIn",
-    link: "https://LinkedIn.com/divine-domokuma",
+    link: "https://LinkedIn.com/in/divine-domokuma",
   },
   {
     text: "telegram",
