@@ -1,5 +1,5 @@
 export const showTimeTitle = (index: number) => {
-  switch (index + 1) {
+  switch (index) {
     case 1:
       return "Days";
     case 2:

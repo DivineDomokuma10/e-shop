@@ -32,10 +32,10 @@ const Nav = () => {
       />
 
       <div className="hidden space-x-7 md:flex">
-        {NAV_LINKS.map(({ path, text }) => (
+        {NAV_LINKS.map(({ path, text }, i) => (
           <Link
             href={path}
-            key={text}
+            key={text + i}
             className={`${poppins.className} text-gray-700 text-sm hover:text-[#ff6f61] hover:font-bold`}
           >
             {text}

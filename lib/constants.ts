@@ -49,7 +49,7 @@ export const CATEGORIES = [
   },
   {
     text: "Automobile",
-    link: "/category/headphones",
+    link: "/category/automobiles",
   },
   {
     text: "Accesories",
@@ -85,4 +85,34 @@ export const HERO_CAROUSEL_DATA = [
     mainText: "Super Fast Power Bank",
     desp: "There are many variations passages of Lorem ipsum available, but the majority have.",
   },
+];
+
+export const TOP_PRODUCTS_DATA = [
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
+  { name: "Headphone", price: "34", img: "/headphone.png" },
 ];

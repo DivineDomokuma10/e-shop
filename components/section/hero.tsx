@@ -17,8 +17,8 @@ const Hero = () => {
       ]}
     >
       <CarouselContent>
-        {HERO_CAROUSEL_DATA.map(({ desp, image, mainText }, i) => (
-          <CarouselItem key={i}>
+        {HERO_CAROUSEL_DATA.map(({ desp, image, mainText }) => (
+          <CarouselItem key={mainText}>
             <section className="w-screen h-[75dvh] bg-gray-100 flex p-5 md:h-screen md:px-36">
               <aside className="w-full h-full flex flex-col justify-center items-center space-y-7 md:items-start md:space-y-7 md:w-1/2">
                 <h2 className="text-[#444] text-6xl text-center font-medium md:text-start md:text-7xl">

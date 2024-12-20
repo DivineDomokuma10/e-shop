@@ -1,9 +1,9 @@
 "use client";
-import CountDown from "../count-down";
 import Image from "next/image";
-import { Button } from "../ui/button";
-
 import { ReactNode } from "react";
+
+import { Button } from "../ui/button";
+import CountDown from "../count-down";
 
 interface Props {
   img: string;

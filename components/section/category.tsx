@@ -67,7 +67,7 @@ const Category = () => {
           {CATEGORIES.map(({ link, text }, i) => (
             <Link
               href={link}
-              key={`desktop-${i}`}
+              key={`desktop.${link}`}
               className="group hidden w-fit h-fit p-4 rounded-[5px] text-gray-600 flex-col items-center space-y-3 shadow-md md:flex"
             >
               {categoriesIcon[i]}
@@ -78,7 +78,7 @@ const Category = () => {
           {CATEGORIES.slice(0, 4).map(({ link, text }, i) => (
             <Link
               href={link}
-              key={`mobile-${i}`}
+              key={`mobile.${link}`}
               className="group w-fit h-fit p-2 rounded-[5px] text-gray-600 flex flex-col items-center space-y-3 shadow-md md:hidden"
             >
               {categoriesIcon[i]}
@@ -90,7 +90,7 @@ const Category = () => {
 
       <LimitedOfferCard
         img="/headphone2.png"
-        countDownTimer={[15, 35, 56, 34]}
+        countDownTimer={[15, 5, 56, 34]}
         maintext="Enhance Your Music Experience"
         badgeIcon={<BiHeadphone className="text-white font-extrabold" />}
       />
