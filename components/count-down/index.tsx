@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+
 import { showTimeTitle } from "./helper-function";
 
 interface IStartTimers {
@@ -24,7 +25,7 @@ const CountDown = ({ classStyles, startTimers }: Props) => {
 
   useEffect(() => {
     const onCountDown = () => {
-      setTimeout(() => {
+      setInterval(() => {
         setCurrentTimers((prev) =>
           prev.secs > 0
             ? { ...prev, secs: prev.secs - 1 }
@@ -32,7 +33,7 @@ const CountDown = ({ classStyles, startTimers }: Props) => {
         );
       }, 1000);
 
-      setTimeout(() => {
+      setInterval(() => {
         setCurrentTimers((prev) =>
           prev.mins > 0
             ? { ...prev, mins: prev.mins - 1 }
@@ -40,13 +41,13 @@ const CountDown = ({ classStyles, startTimers }: Props) => {
         );
       }, 1000 * 60);
 
-      setTimeout(() => {
+      setInterval(() => {
         setCurrentTimers((prev) =>
           prev.hrs > 0 ? { ...prev, hrs: prev.hrs - 1 } : { ...prev, hrs: 0 }
         );
       }, 1000 * 60 * 60);
 
-      setTimeout(() => {
+      setInterval(() => {
         setCurrentTimers((prev) =>
           prev.days > 0
             ? { ...prev, days: prev.days - 1 }

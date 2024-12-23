@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import { Button } from "../ui/button";
-
 interface Props {
   img: string;
   name: string;
@@ -32,14 +30,10 @@ const ProductCard = ({ img, name, price }: Props) => {
 
       <div className="flex flex-col space-y-1">
         <div className="flex justify-between px-1 text-sm">
-          <p className="font-extralight">{name}</p>
+          <p className="font-extralight text-gray-800">{name}</p>
 
-          <h4 className="font-semibold">${price}</h4>
+          <h4 className="font-medium text-gray-500">${price}</h4>
         </div>
-
-        <Button className="w-full font-normal rounded-[5px] bg-blue-400">
-          View Product
-        </Button>
       </div>
     </aside>
   );

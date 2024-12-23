@@ -57,11 +57,7 @@ const Category = () => {
   return (
     <section className="w-full flex flex-col space-y-36 px-5 py-10 md:space-y-44 md:px-36">
       <aside className="w-full flex flex-col space-y-12">
-        <SectionHeaders
-          showMore={true}
-          subTitle="Categories"
-          title="Browse by Category"
-        />
+        <SectionHeaders subTitle="Categories" title="Browse by Category" />
 
         <section className="flex justify-between">
           {CATEGORIES.map(({ link, text }, i) => (

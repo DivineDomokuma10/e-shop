@@ -1,13 +1,12 @@
 import {
   RiMenu2Fill,
+  RiUser2Line,
   RiSearch2Line,
   RiShoppingBag4Line,
-  RiUser2Line,
 } from "react-icons/ri";
 import Link from "next/link";
 import Image from "next/image";
 
-import { poppins } from "@/fonts";
 import { NAV_LINKS } from "@/lib/constants";
 
 const Nav = () => {
@@ -36,7 +35,7 @@ const Nav = () => {
           <Link
             href={path}
             key={text + i}
-            className={`${poppins.className} text-gray-700 text-sm hover:text-[#ff6f61] hover:font-bold`}
+            className="text-gray-700 text-sm hover:text-[#ff6f61] hover:font-bold"
           >
             {text}
           </Link>

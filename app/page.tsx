@@ -1,3 +1,4 @@
+import Blog from "@/components/section/blog";
 import Category from "@/components/section/category";
 import Hero from "@/components/section/hero";
 import TopProducts from "@/components/section/top-products";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Category />
       <TopProducts />
+      <Blog />
     </main>
   );
 }
