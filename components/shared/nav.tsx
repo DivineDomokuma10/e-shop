@@ -52,7 +52,9 @@ const Nav = () => {
           <RiShoppingBag4Line className="font-bold cursor-pointer hover:text-[#ff6f61]" />
         </div>
 
-        <RiUser2Line className="font-bold cursor-pointer hover:text-[#ff6f61]" />
+        <Link href="/login">
+          <RiUser2Line className="font-bold cursor-pointer hover:text-[#ff6f61]" />
+        </Link>
       </div>
     </nav>
   );

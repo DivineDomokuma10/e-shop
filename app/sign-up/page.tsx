@@ -3,25 +3,25 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { LoginFields } from "@/lib/interfaces";
 import { Button } from "@/components/ui/button";
-import { loginSchema } from "@/schema/auth.schema";
+import { SignUpFields } from "@/lib/interfaces";
+import { signUpSchema } from "@/schema/auth.schema";
 import AuthInput from "@/components/shared/auth-input";
 import AuthLayout from "@/components/shared/auth-layout";
 
-const Login = () => {
+const SignUp = () => {
   const {
     register,
     handleSubmit,
     formState: { errors, isValid },
-  } = useForm<LoginFields>({
+  } = useForm<SignUpFields>({
     mode: "onChange",
     reValidateMode: "onChange",
-    resolver: zodResolver(loginSchema),
+    resolver: zodResolver(signUpSchema),
   });
 
-  const onsubmit = (logins: LoginFields) => {
-    console.log(logins);
+  const onsubmit = (credientals: SignUpFields) => {
+    console.log(credientals);
   };
 
   return (
@@ -31,11 +31,19 @@ const Login = () => {
         className="flex flex-col space-y-5"
       >
         <header className="flex flex-col space-y-0.5">
-          <h2 className="text-xl font-medium text-[#333]">LOGIN</h2>
-          <p className="text-xs">Welcome back, please login to your account.</p>
+          <h2 className="text-xl font-medium text-[#333]">SIGN UP</h2>
+          <p className="text-xs">Create an account with us</p>
         </header>
 
         <section className="flex flex-col space-y-5">
+          <AuthInput
+            type="text"
+            errors={errors}
+            register={register}
+            fieldName="userName"
+            placeholder="Username"
+          />
+
           <AuthInput
             type="email"
             errors={errors}
@@ -43,6 +51,7 @@ const Login = () => {
             placeholder="Email"
             register={register}
           />
+
           <AuthInput
             type="password"
             errors={errors}
@@ -52,10 +61,20 @@ const Login = () => {
           />
         </section>
 
-        <div className="flex justify-between text-xs cursor-pointer">
-          <Link href="/sign-up">Dont have an account?</Link>
+        <div className="flex space-x-3 text-xs">
+          <input
+            type="checkbox"
+            id="term-and-condition"
+            {...register("termsAndCondition")}
+          />
 
-          <Link href="/forgot-password">Forgot your password? </Link>
+          <span className="flex space-x-1">
+            <label htmlFor="term-and-condition">I agree to the </label>
+
+            <Link href={""} className="text-red-400">
+              terms and condition
+            </Link>
+          </span>
         </div>
 
         <Button disabled={!isValid} className="w-72 px-5 rounded-[5px] py-3">
@@ -66,4 +85,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;
