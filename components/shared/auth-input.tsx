@@ -38,7 +38,7 @@ function AuthInput<R extends FieldValues>({
             type={type}
             placeholder={placeholder}
             {...register(fieldName as Path<R>)}
-            className="w-72 border-2 px-5 rounded-[5px] py-2 border-gray-400 placeholder:text-sm"
+            className="w-80 border-2 px-5 rounded-[5px] py-2 border-gray-400 placeholder:text-sm"
           />
           <span className="text-xs text-red-500">{error}</span>
         </div>
@@ -49,17 +49,17 @@ function AuthInput<R extends FieldValues>({
               type={passwordType}
               placeholder={placeholder}
               {...register(fieldName as Path<R>)}
-              className="w-72 border-2 px-5 rounded-[5px] py-2 border-gray-400 placeholder:text-sm"
+              className="w-80 border-2 px-5 rounded-[5px] py-2 border-gray-400 placeholder:text-sm"
             />
 
             {passwordType === "password" ? (
               <FaEye
-                className="absolute right-3"
+                className="absolute right-3 text-gray-700"
                 onClick={handlePassWordVisibility}
               />
             ) : (
               <FaEyeSlash
-                className="absolute right-3"
+                className="absolute right-3 text-gray-700"
                 onClick={handlePassWordVisibility}
               />
             )}

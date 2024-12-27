@@ -7,7 +7,7 @@ const Blog = () => {
     <section className="w-full flex flex-col space-y-20 px-5 py-10 md:px-36">
       <SectionHeaders subTitle="Blog Posts" title="Blogs and Events" />
 
-      <div className="flex flex-col space-y-5 md:space-y-0 md:justify-between md:flex-row">
+      <div className="w-full flex flex-col space-y-5 items-center md:items-start md:space-y-0 md:justify-between md:flex-row">
         {BLOG_POSTS_DATA.map((blogPost, i) => (
           <BlogCard key={`${blogPost.title}-${i}`} {...blogPost} />
         ))}
@@ -17,3 +17,5 @@ const Blog = () => {
 };
 
 export default Blog;
+
+// w-full flex flex-col items-center

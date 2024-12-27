@@ -77,7 +77,7 @@ const SignUp = () => {
           </span>
         </div>
 
-        <Button disabled={!isValid} className="w-72 px-5 rounded-[5px] py-3">
+        <Button disabled={!isValid} className="w-80 px-5 rounded-[5px] py-4">
           Submit
         </Button>
       </form>
