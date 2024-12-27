@@ -11,7 +11,7 @@ interface Props {
 
 const BlogCard = ({ img, title, timestamp }: Props) => {
   return (
-    <aside className="w-full flex flex-col space-y-3 md:w-[23%] md:space-y-5">
+    <aside className="w-fit flex flex-col space-y-3 md:w-[23%] md:space-y-5">
       <div className="w-full h-56 overflow-hidden rounded-[3px]">
         <Image
           alt=""

@@ -22,11 +22,11 @@ const AuthLayout = ({ children }: { children: ReactNode }) => {
         />
       </header>
 
-      <section className="w-full h-full flex flex-col space-y-3 items-center md:space-y-0 md:space-x-20 md:flex-row md:justify-center">
+      <section className="w-full h-full flex flex-col px-10 space-y-10 items-center md:space-y-0 md:space-x-20 md:flex-row md:justify-center">
         <Image
           alt=""
           src="/cart1.svg"
-          width={200}
+          width={250}
           height={100}
           className="md:hidden"
         />
